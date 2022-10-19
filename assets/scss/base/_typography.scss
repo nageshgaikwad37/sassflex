@@ -1,0 +1,33 @@
+.heading-primary{
+    color: $color-white;
+    &-main{
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 35px;
+        animation: slideright .5s ease-in-out forwards;
+    }
+    &-submain{
+        font-size: 20px;
+        font-weight: 600;
+        animation: slideleft .5s ease-in-out forwards;
+        letter-spacing: 15px;
+    }
+}
+
+.heading-secondary{
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all .2s ease-in-out;
+    &:hover, &:focus{
+        transform: scale(1.1);
+        text-shadow: 5px 10px 20px rgba($color-dark, .2);
+    }
+    
+}

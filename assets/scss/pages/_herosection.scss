@@ -1,0 +1,32 @@
+.herosection{
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light-test, 0.8), rgba($color-primary-dark-test, 0.8)), url("../images/hero-small.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
+    position: relative;
+    z-index: 5;
+    
+    .logo{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 80px;
+        display: inline-block;
+        img{
+            width: 100%;
+        }
+    }
+    .caption{     
+           @include atcenter;
+           height: 100%;
+     }
+    
+}
+
+.section-aboutus{
+    background-color: $color-grey-dark;
+    padding: 250px 0;
+    transform: translateY(-25vh);
+}
